@@ -30,8 +30,9 @@ services:
       - SSL_KEY_NAME=tls.key
       - TZ=Etc/UTC
     ports:
-      - 80:8088
-      - 443:8043
+      - 8088:8088
+      - 8043:8043
+      - 8843:8843
     volumes:
       - omada-data:/opt/tplink/EAPController/data
       - omada-logs:/opt/tplink/EAPController/logs
